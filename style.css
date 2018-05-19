@@ -10,9 +10,9 @@ body {
 
 .container {
     background: rgba(255,255,255, 0.5);
-    width:40%;
+    max-width: 450px;
     margin:auto;
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding:17px;
     border-radius:6px;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -35,6 +35,9 @@ label {
     display: flex;  
     margin-top: 5px;
     font-size:1.2;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 #task_to_add {
@@ -71,6 +74,9 @@ label {
     margin-bottom: 15px;
     align-content: stretch;
     align-items: center;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .task_descrip {
@@ -87,10 +93,6 @@ label {
     flex-direction: column;
 }
 
-.task_decrip::before {
-    
-}
-
 .task_date {
     margin:0;
     font-size: 12px;
@@ -99,11 +101,13 @@ label {
 .task_text {
     margin: 0;
 }
-
-.btn_done {
-    flex-grow:0.3;
+.btn {
+     flex-grow:0.3;
     height: 48px;
     border:none;
+}
+
+.btn_done {
     background-color:#FFD700;
 }
 
@@ -112,9 +116,6 @@ label {
 }
 
 .btn_dlt {
-    flex-grow:0.3;
-    height: 48px;
-    border:none;
     background-color:#FF6347;
 }
 
