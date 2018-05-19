@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container">
+        <main class="container">
             <form>
                 <label>Lista zadań</label>
                 <div class="text_input">
@@ -18,30 +18,33 @@
                     <button type="submit" id="btn_add">Dodaj zadanie</button>
                 </div>    
             </form>
-            <div class="list_with_tasks">
+            <section class="list_with_tasks">
                 <div class="task">
                     <div class="task_descrip">
                         <p class="task_date">Data</p>
                         <p class="task_text">Zadanie 1</p>
                     </div>    
+                    <button type="button" class="btn_done"><i class="fas fa-check"></i></button>
                     <button type="button" class="btn_dlt"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="task">
                     <div class="task_descrip">
                         <p class="task_date">Data</p>
-                        <p class="task_text">Zadanie 2</p>
+                        <p class="task_text">Zadanie 1</p>
                     </div>    
+                    <button type="button" class="btn_done"><i class="fas fa-check"></i></button>
                     <button type="button" class="btn_dlt"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="task">
                     <div class="task_descrip">
                         <p class="task_date">Data</p>
-                        <p class="task_text">Zadanie 3</p>
+                        <p class="task_text">Zadanie 1</p>
                     </div>    
+                    <button type="button" class="btn_done"><i class="fas fa-check"></i></button>
                     <button type="button" class="btn_dlt"><i class="fas fa-times"></i></button>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>
