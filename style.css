@@ -1,0 +1,21 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: ;
+    background: linear-gradient(to right, 	#008B8B , #00CED1);
+    font-family: 'BioRhyme', sans-serif;
+}
+
+.container {
+    background: rgba(255,255,255, 0.5);
+    width:40%;
+    margin:auto;
+    margin-top: 8rem;
+    padding:12px;
+    border-radius:6px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
