@@ -1,0 +1,21 @@
+@media (max-width:400px) {
+    .container{
+        margin-top:2rem;
+    }
+    .text_input {
+        display: flex;
+        flex-direction: column;
+    }
+    .task{
+        display: block;
+    }
+    .task_descrip {
+        height: 55px;
+    }
+    
+    .btn {
+        float:rigth;
+        height: 28px; 
+        width:50%;
+    }
+}

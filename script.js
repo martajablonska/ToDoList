@@ -129,6 +129,5 @@ function toggleTaskComplete(task) {
 
 function deleteTask(task) {
     let taskToDel = task.closest('.task');
-    console.log(taskToDel);
     task.closest('.list_with_tasks').removeChild(taskToDel);
 };
