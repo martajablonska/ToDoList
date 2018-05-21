@@ -115,10 +115,10 @@ label {
     padding-left: 10px;
     font-size: 18px;
     height: 48px;
-    -webkit-margin-start: 0px;
+    /*-webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+    -webkit-margin-after: 0;*/
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,7 +127,6 @@ label {
     -webkit-box-direction: normal; 
         -ms-flex-direction: column; 
             flex-direction: column;
-    align-content: space-between;
     width:100%;
 }
 
@@ -138,11 +137,13 @@ label {
 
 .task_date {
     margin:0;
+    margin-top: 2px;
     font-size: 11px;
 }
 
 .task_text {
     margin: 0;
+    margin-top: 2px;
 }
 
 .btn {
