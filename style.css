@@ -94,6 +94,11 @@ label {
     flex-direction: column;
 }
 
+.task_done {
+    background-color: rgba(255,255,255,0.4);
+    color:grey;
+}
+
 .task_date {
     margin:0;
     font-size: 12px;
@@ -103,9 +108,9 @@ label {
     margin: 0;
 }
 
-.task_text_did {
-    text-decoration: overline;
-}
+/*.task_text_did {
+    text-decoration:line-through;
+}*/
 
 .btn {
      flex-grow:0.3;

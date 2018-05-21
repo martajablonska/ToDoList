@@ -29,26 +29,30 @@ function addTask(task) {
     newTask.classList.add('task');
     newTask.innerHTML = prepareTask(task);
     
-    //Added 'done' class to task and delete task
+    //Added listener to 'done' class and delete task
     
     let btnDoneToggle = newTask.querySelector('.btn_done');
-    let textDone = newTask.querySelector('.task_text');
     let btnDltToggle = newTask.querySelector('.btn_dlt');
+    
     
     btnDoneToggle.addEventListener('click', function() {
         toggleTaskComplete(this);
+        
     });
 
     btnDltToggle.addEventListener('click', function() {
         deleteTask(this);
     });
     
+    //Added task to the end of list
+    
     tasksList.appendChild(newTask);
 };
 
+
 function prepareTask(task) {
     return '<div class="task_descrip">' +
-                '<p class="task_date">Data</p>' +
+                '<p class="task_date"><span class="day">Dzień </span><span="month>Miesiąc </span><span="year">Rok </span></p>' +
                 '<p class="task_text">'+task+'</p>' +
             '</div>' +    
             '<button type="button" class="btn btn_done"><i class="fas fa-check"></i></button>' +
@@ -80,16 +84,19 @@ function getTask() {
     
 }*/
 
+//
+
 function toggleTaskComplete(task) {
-    task.classList.toggle('btn_did');
+    task.classList.toggle('btn_did'); 
+    let textDone = task.previousSibling;
+    textDone.classList.toggle('task_done');
 };
 
 function deleteTask(task) {
-    
     let taskToDel = task.closest('.task');
+    console.log(taskToDel);
     task.closest('.list_with_tasks').removeChild(taskToDel);
-}
+};
 
-/*function toggleTextComplete(task) {
-    task.classList.toggle('task_text_did');
-};*/
+
+
