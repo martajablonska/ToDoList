@@ -10,6 +10,8 @@ let tasks = [
 
 let tasksList = document.querySelector('.list_with_tasks');
 
+let dateNow = new Date;
+
 //Add task on list
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -29,7 +31,53 @@ function addTask(task) {
     newTask.classList.add('task');
     newTask.innerHTML = prepareTask(task);
     
-    //Added listener to 'done' class and delete task
+    //Add date to task 
+    
+    let date = newTask.querySelector('.task_date');
+    let weekDayNumb = dateNow.getDay();
+    let weekDay='';
+    
+    switch(weekDayNumb) {
+        case weekDayNumb = 0:
+                weekDay = "Niedziela";
+                break;
+        case weekDayNumb = 1:
+                weekDay = "Poniedziałek";
+                break;
+        case weekDayNumb = 2:
+                weekDay =  "Wtorek";
+                break;
+        case weekDayNumb = 3:
+                weekDay =  "Środa";
+                break;
+        case weekDayNumb = 4:
+                weekDay =  "Czwartek";
+                break;  
+        case weekDayNumb = 5:
+                weekDay =  "Piątek";
+                break;   
+        case weekDayNumb = 6:
+                weekDay =  "Sobota";
+                break;    
+    }
+            
+    let day = dateNow.getDate();
+    let monthNumb = dateNow.getMonth();
+    let month = '';
+    
+    if (monthNumb.length > 1) {
+        month=monthNumb;
+    } else {
+        month="0"+monthNumb;
+    };    
+    
+    let year = dateNow.getFullYear();
+    let dateAddTask = weekDay + ' ' + day + ' ' + month + ' ' + year;
+    let taskDate = newTask.querySelector('.task_date');
+    taskDate.innerHTML = dateAddTask;
+    console.log(weekDayNumb);
+    
+    //Add listener to 'done' class and delete task
     
     let btnDoneToggle = newTask.querySelector('.btn_done');
     let btnDltToggle = newTask.querySelector('.btn_dlt');
@@ -37,7 +85,6 @@ function addTask(task) {
     
     btnDoneToggle.addEventListener('click', function() {
         toggleTaskComplete(this);
-        
     });
 
     btnDltToggle.addEventListener('click', function() {
@@ -52,7 +99,7 @@ function addTask(task) {
 
 function prepareTask(task) {
     return '<div class="task_descrip">' +
-                '<p class="task_date"><span class="day">Dzień </span><span="month>Miesiąc </span><span="year">Rok </span></p>' +
+                '<p class="task_date">Data</p>' +
                 '<p class="task_text">'+task+'</p>' +
             '</div>' +    
             '<button type="button" class="btn btn_done"><i class="fas fa-check"></i></button>' +
@@ -72,19 +119,7 @@ function getTask() {
     });
 };
 
-//Toggle with class 'done' task
-
-/*function done() {
-    let btnDone = document.querySelector(".btn_done");
-    
-    btnDone.addEventListener('click', function() {
-        console.log(klik);
-        //document.classList.toggle('btn_did');
-    });
-    
-}*/
-
-//
+//Function to change tasks class(done, delete)
 
 function toggleTaskComplete(task) {
     task.classList.toggle('btn_did'); 
@@ -97,6 +132,3 @@ function deleteTask(task) {
     console.log(taskToDel);
     task.closest('.list_with_tasks').removeChild(taskToDel);
 };
-
-
-
