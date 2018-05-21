@@ -5,22 +5,18 @@
     .text_input {
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 4rem;
     }
     .task{
         display: block;
     }
     .task_descrip {
-        height: 55px;
+        height: 3.2rem;
     }
-    
-    .task button {
-        margin:0;
-    }
-    
+        
     .btn {
         float:rigth;
-        height:32px; 
+        height:2.5rem; 
         width:50%;
     }
     
