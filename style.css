@@ -3,14 +3,12 @@
             box-sizing:border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Catamaran'); 
-
 body {
      background: -webkit-gradient(linear, 	left top, right top, 	from(#008B8B) , to(#00CED1));
     background: -webkit-linear-gradient(left, 	#008B8B , #00CED1);
     background: -o-linear-gradient(left, 	#008B8B , #00CED1);
     background: linear-gradient(to right, 	#008B8B , #00CED1);
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Catamaran', 'Calibri', sans-serif;
 }
 
 .container {
