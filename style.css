@@ -71,17 +71,17 @@ label {
 
 .task {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 15px;
+    flex-direction: row;
     align-content: stretch;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 15px;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .task_descrip {
-    flex-grow:4;
     background-color: rgb(255,255,255);
     padding-left: 10px;
     font-size: 18px;
@@ -92,6 +92,7 @@ label {
     -webkit-margin-after: 0;
     display: flex;
     flex-direction: column;
+    width:100%;
 }
 
 .task_done {
@@ -101,19 +102,15 @@ label {
 
 .task_date {
     margin:0;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .task_text {
     margin: 0;
 }
 
-/*.task_text_did {
-    text-decoration:line-through;
-}*/
-
 .btn {
-     flex-grow:0.3;
+    width: 58px;
     height: 48px;
     border:none;
     cursor: pointer;
@@ -123,20 +120,12 @@ label {
     background-color:#FFD700;
 }
 
-/*.btn_done:hover {
-    background-color:#ffe802;
-}*/
-
 .btn_did {
-    background-color: limegreen;
+    background-color: #008080;
 }
 
 .btn_dlt {
     background-color:#FF6347;
-}
-
-.btn_dlt:hover {
-    background-color:#FF0000;
 }
 
 .fas {

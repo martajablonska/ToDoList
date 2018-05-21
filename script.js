@@ -3,9 +3,10 @@
 const taskForm = document.querySelector('.task_to_post form');
 
 let tasks = [
-    "Zadanie 3",
-    "Zadanie 4",
-    "Zadanie 5"
+    "Kupić karmę dla lamy",
+    "Zadzwonić do cioci Gieni",
+    "Wymienić opony",
+    "Napisać aplikacje To Do List"
 ];
 
 let tasksList = document.querySelector('.list_with_tasks');
@@ -75,7 +76,6 @@ function addTask(task) {
     let dateAddTask = weekDay + ' ' + day + ' ' + month + ' ' + year;
     let taskDate = newTask.querySelector('.task_date');
     taskDate.innerHTML = dateAddTask;
-    console.log(weekDayNumb);
     
     //Add listener to 'done' class and delete task
     
