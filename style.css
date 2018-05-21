@@ -127,6 +127,9 @@ label {
     -webkit-box-direction: normal; 
         -ms-flex-direction: column; 
             flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     width:100%;
 }
 
@@ -142,7 +145,6 @@ label {
 
 .task_text {
     margin: 0;
-    margin-top: 5px;
 }
 
 .btn {
