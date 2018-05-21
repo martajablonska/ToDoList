@@ -56,6 +56,7 @@ label {
     padding:5px;
     flex-grow:1;
     font-size: inherit;
+    cursor: pointer;
 }
 
 #btn_add:hover {
@@ -101,18 +102,28 @@ label {
 .task_text {
     margin: 0;
 }
+
+.task_text_did {
+    text-decoration: overline;
+}
+
 .btn {
      flex-grow:0.3;
     height: 48px;
     border:none;
+    cursor: pointer;
 }
 
 .btn_done {
     background-color:#FFD700;
 }
 
-.btn_done:hover {
+/*.btn_done:hover {
     background-color:#ffe802;
+}*/
+
+.btn_did {
+    background-color: limegreen;
 }
 
 .btn_dlt {
