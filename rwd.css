@@ -15,7 +15,11 @@
     
     .btn {
         float:rigth;
-        height: 28px; 
+        height:28px; 
         width:50%;
+    }
+    
+    #btn_add {
+        height: auto;
     }
 }
